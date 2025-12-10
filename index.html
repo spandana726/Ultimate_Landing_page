@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ultimate — Streaming Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-brand" href="index.html">🌐Ultimate Landing Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navC"
+              aria-controls="navC" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navC">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" data-page="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="entertainment" href="categories/entertainment.html">Entertainment</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="music" href="categories/music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="education" href="categories/education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="live" href="categories/live-podcasts.html">Live &amp; Podcasts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="d-flex align-items-center text-white">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="display-3 fw-extrabold">Streamline your content.<br>Captivate your audience.</h1>
+          <p class="lead mt-3 mb-4">A unified platform for video, music, courses and live events — built for creators and audiences.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <button class="btn btn-primary btn-lg btn-cta btn-play-link" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              ▶ Watch Demo
+            </button>
+            <a class="btn btn-outline-light btn-lg" href="#media">Explore Categories →</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="categories" class="section-gap">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Categories</h2>
+          <p class="text-muted">Curated sections to help users discover film, music, learning and live experiences.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3">
+            <article class="card h-100 p-4 shadow-sm rounded-lg category-card">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-square bg-primary text-white rounded-3 p-3">🎬</div>
+                <div>
+                  <h5 class="mb-1">Entertainment</h5>
+                  <p class="mb-2 text-muted small">Trending movies & shows.</p>
+                  <a class="stretched-link link-primary" href="categories/entertainment.html">View →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-3">
+            <article class="card h-100 p-4 shadow-sm rounded-lg category-card">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-square bg-pink text-white rounded-3 p-3">🎧</div>
+                <div>
+                  <h5 class="mb-1">Music</h5>
+                  <p class="mb-2 text-muted small">Playlists, albums & live sessions.</p>
+                  <a class="stretched-link link-primary" href="categories/music.html">View →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-3">
+            <article class="card h-100 p-4 shadow-sm rounded-lg category-card">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-square bg-green text-white rounded-3 p-3">📚</div>
+                <div>
+                  <h5 class="mb-1">Education</h5>
+                  <p class="mb-2 text-muted small">Micro-courses & workshops.</p>
+                  <a class="stretched-link link-primary" href="categories/education.html">View →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-3">
+            <article class="card h-100 p-4 shadow-sm rounded-lg category-card">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="icon-square bg-yellow text-white rounded-3 p-3">📡</div>
+                <div>
+                  <h5 class="mb-1">Live &amp; Podcasts</h5>
+                  <p class="mb-2 text-muted small">Concerts, Q&A streams and on-demand podcasts.</p>
+                  <a class="stretched-link link-primary" href="categories/live-podcasts.html">View →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="section-gap bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Featured Videos & Recommendations</h2>
+          <p class="text-muted">Click any tile to open the video on YouTube (opens in a new tab).</p>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Rick Astley — Never Gonna Give You Up</div>
+                <div class="video-desc">Classic viral music video.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=dQw4w9WgXcQ" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Eminem — Lose Yourself</div>
+                <div class="video-desc">Motivational hip-hop performance.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=_Yhyp-_hX2s" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Coldplay — Viva La Vida</div>
+                <div class="video-desc">Orchestral pop single.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=dvgZkm1xWPE" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Linkin Park — Numb</div>
+                <div class="video-desc">Rock classic.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=kXYiU_JCYtU" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Queen — Bohemian Rhapsody</div>
+                <div class="video-desc">Timeless opera-rock masterpiece.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">PSY — Gangnam Style</div>
+                <div class="video-desc">Global pop hit.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=9bZkp7q19f0" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Adele — Hello</div>
+                <div class="video-desc">Power ballad.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=YQHsXMglC9A" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Sia — Chandelier</div>
+                <div class="video-desc">Stunning vocal performance.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=2vjPBrBU-TM" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Bruno Mars — Uptown Funk</div>
+                <div class="video-desc">Funk pop hit.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=OPf0YbXqDm0" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Ed Sheeran — Shape of You</div>
+                <div class="video-desc">Worldwide streaming hit.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=JGwWNGJdvx8" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Coldplay — The Scientist</div>
+                <div class="video-desc">Emotional track.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=RB-RcX5DS5A" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Maroon 5 — Sugar</div>
+                <div class="video-desc">Feel-good pop.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=09R8_2nJtjg" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Michael Jackson — Thriller</div>
+                <div class="video-desc">Classic music video.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=sOnqjkJTMaA" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Shakira — Waka Waka</div>
+                <div class="video-desc">World cup anthem.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=pRpeEdMmmQ0" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">The Weeknd — Blinding Lights</div>
+                <div class="video-desc">Synthwave hit.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=4NRXx6U8ABQ" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Imagine Dragons — Believer</div>
+                <div class="video-desc">Energetic rock.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=7wtfhZwyrcc" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Sia — Cheap Thrills</div>
+                <div class="video-desc">Party track.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=nYh-n7EOtMA" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Guns N' Roses — November Rain</div>
+                <div class="video-desc">Epic rock ballad.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=8SbUC-UaAxE" href="#">Open on YouTube</a>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb">▶</div>
+            <div class="video-body">
+              <div>
+                <div class="video-title">Florence + The Machine — Dog Days Are Over</div>
+                <div class="video-desc">Indie pop favourite.</div>
+              </div>
+              <a class="video-cta video-link" data-video="https://www.youtube.com/watch?v=iWOyfLBYtuU" href="#">Open on YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" class="btn btn-outline-primary">More recommendations on YouTube →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-gap">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">What People Say</h2>
+          <p class="text-muted">Real feedback from happy users.</p>
+        </div>
+
+        <div class="slider card p-4 shadow-sm">
+          <div class="slides" id="slides">
+            <div class="slide">
+              <blockquote class="text-center mb-0">
+                <div class="star">★</div>
+                <p class="fst-italic">“This landing demo increased user demo requests by 35% — polished and easy to adapt.”</p>
+                <footer class="mt-3">— Priya, Product Manager</footer>
+              </blockquote>
+            </div>
+            <div class="slide hidden">
+              <blockquote class="text-center mb-0">
+                <div class="star">★</div>
+                <p class="fst-italic">“Beautiful UI and very responsive on phones. Recruiters loved it!”</p>
+                <footer class="mt-3">— Aman, Frontend Engineer</footer>
+              </blockquote>
+            </div>
+            <div class="slide hidden">
+              <blockquote class="text-center mb-0">
+                <div class="star">★</div>
+                <p class="fst-italic">“Clean code, great structure — perfect as a portfolio piece.”</p>
+                <footer class="mt-3">— Sunita, Hiring Lead</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="slider-controls mt-3 d-flex justify-content-between align-items-center">
+            <div>
+              <button class="btn btn-sm btn-outline-secondary" id="prev">Prev</button>
+              <button class="btn btn-sm btn-outline-secondary" id="next">Next</button>
+            </div>
+            <div id="dots" class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-gap bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Frequently Asked Questions</h2>
+          <p class="text-muted">Quick answers to common questions.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <details class="mb-3">
+              <summary>How do I deploy this project?</summary>
+              <p class="mt-2">Push to GitHub and enable Pages or deploy to Netlify. Static files only.</p>
+            </details>
+
+            <details class="mb-3">
+              <summary>Is this accessible?</summary>
+              <p class="mt-2">Yes — semantic markup, alt text, focus-visible styles and readable contrast are used.</p>
+            </details>
+
+            <details>
+              <summary>Can I replace the demo media with my own?</summary>
+              <p class="mt-2">Yes — replace files in /assets/ (if used) and update paths or data-video links in HTML.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="cta-banner rounded-lg shadow-lg p-5 text-center mx-auto">
+          <h3 class="mb-2 text-white fw-bold">Ready to explore more?</h3>
+          <p class="text-white-90 mb-3">Discover our complete catalog of entertainment content.</p>
+          <a href="index.html" class="btn btn-light btn-md">Back to Home →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 bg-footer text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold text-brand">Ultimate</h6>
+          <p class="small text-muted">Polished landing template for streaming & content.</p>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold">Product</h6>
+          <ul class="list-unstyled small">
+            <li><a class="text-light" href="#">Features</a></li>
+            <li><a class="text-light" href="#">Pricing</a></li>
+            <li><a class="text-light" href="#">Docs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Resources</h6>
+          <ul class="list-unstyled small">
+            <li><a class="text-light" href="#">Blog</a></li>
+            <li><a class="text-light" href="#">Support</a></li>
+            <li><a class="text-light" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Newsletter</h6>
+          <form id="newsletter" class="d-flex">
+            <input id="email" class="form-control form-control-sm me-2" placeholder="Your email" aria-label="Email">
+            <button class="btn btn-sm btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-top pt-3 mt-4 d-flex justify-content-between small">
+        <div>© <span id="year"></span> Ultimate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
